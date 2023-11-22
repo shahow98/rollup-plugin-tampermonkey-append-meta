@@ -7,6 +7,7 @@ export default function appendMetaPlugin() {
     name: "tampermonkey-append-meta",
     generateBundle(_, bundle) {
       Object.keys(bundle)
+        .filter((entry) => bundle[entry].isEntry)
         .filter((entry) => bundle[entry].type === "chunk")
         .map((entry) => {
           const chunk = bundle[entry];

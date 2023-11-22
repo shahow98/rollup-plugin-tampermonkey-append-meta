@@ -1,8 +1,9 @@
 {
   "name": "rollup-plugin-tampermonkey-append-meta",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.1",
+  "description": "append meta to user script of tampermonkey.",
   "main": "./dist/index.js",
+  "files": ["dist"],
   "scripts": {
     "build": "rollup -c"
   },
