@@ -1,11 +1,14 @@
 {
   "name": "rollup-plugin-tampermonkey-append-meta",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "append meta to user script of tampermonkey.",
+  "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "tsc & rollup -c"
   },
   "author": "shahow",
   "license": "MIT",
@@ -15,5 +18,8 @@
   "keywords": [
     "rollup-plugin",
     "tampermonkey"
-  ]
+  ],
+  "devDependencies": {
+    "typescript": "^5.3.2"
+  }
 }
